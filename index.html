@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fs-4 fw-bold" href="#">rioalifian12</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hai! Saya</h1>
+                <h1 class="fw-bold">Rio Alifian Santoso</h1>
+                <p>Saya adalah seorang Software Engineer berdomisili di Bandung Indonesia</p>
+                <a class="btn button" href="images/potrait.png" download>Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center mb-3">
+                <img class="potrait" src="images/potrait.jpg" alt="Potrait">
+            </div>
+        </div>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" class="mt-1" src="images/arrow.svg" alt="arrow icon">
+        </a>
+    </section>
+    <section id="about" class="about container">
+        <p>Saya adalah lulusan S1 Teknik Informatika dengan IPK 3.41 dari Universitas Pasundan.
+        </p>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Internship Web Developer</h5>
+                        <p class="mb-1">CV. SIC Yogyakarta </p>
+                        <p>(Januari 2018 - Maret 2018)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Pembangungan berbagai web profil perusahaan, diantaranya rumah sakit, panti asuhan, dan e-commerce.</p>
+            </div>
+        </div>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Internship Web Developer</h5>
+                        <p class="mb-1">Balai Besar Bahan dan Barang Teknik (B4T)</p>
+                        <p>(Agustus 2022 - September 2022)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Pembangunan aplikasi inventaris barang berbasis web dengan sistem qr-code. Teknologi yang digunakan adalah html, css, php, javascript, SQL.Menggunakan framework laravel dan bootstrap.</p>
+            </div>
+        </div>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Internship Backend Developer</h5>
+                        <p class="mb-1">PT. Cipta Karya Pangan Pasundan</p>
+                        <p>(November 2023 - Januari 2024)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Pembangunan backend berbasis restful api menggunakan teknologi node.js untuk web layanan pengujian produk.</p>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-md-5">
+                <p>Saya memiliki minat dan keahlian dalam pengembangan website dan ketertarikan di bidang UI/UX. Saya bersemangat untuk terus belajar dan beradaptasi dengan teknologi baru.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 work-img">
+                <div id="work-1" class="work-img-item">
+                    <img src="images/work-1.png" alt="work 1">
+                </div>
+                <div id="work-2" class="work-img-item">
+                    <img src="images/work-2.png" alt="work 2">
+                </div>
+                <!-- <div id="work-3" class="work-img-item">
+                    <img src="images/work-3.png" alt="work 3" id="work-3">
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-lg-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsum ipsam tempora odit iste! Voluptatem ducimus illum consectetur fugit dolores consequuntur accusantium voluptatum eaque! Ducimus sapiente temporibus voluptates fugiat dolores.</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Facebook.svg" alt="facebook icon">
+                        <p class="mb-0 ms-2">Rio Alifian Santoso</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Instagram.svg" alt="instagram icon">
+                        <p class="mb-0 ms-2">@rioalifian12</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Linkedin.jpg" alt="linkedin icon">
+                        <p class="mb-0 ms-2">@rioalifian12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_message" class="form-label">Message</label>
+                      <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
